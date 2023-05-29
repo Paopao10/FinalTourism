@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <img src="assets/logo.png">
+        <li><a href="touristreg.html">
+          <span class="navitem">Register Tourist</span>
+        </a></li>
+        <li><a href="placereg.html">
+          <span class="navitem">Register Place</span>
+        </a></li>
+        <li><a href="tourist.html">
+          <span class="navitem">Registered Tourist</span>
+        </a></li>
+        <li><a href="login.html" class="logout">
+          <span class="navitem">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <section class="main">
+      <div class="mainbox1">
+        <ul>
+          <li>Tourist Registration</li>
+          <li class="active">Place Registration</li>
+          <li>Registered Tourist</li>
+        </ul>
+
+        <form action="place.php" method="post" class="form">
+          <div class="input-box">
+            <label>Place Name</label>
+            <input type="text" name="name" placeholder="Enter the place name" required />
+          </div>
+          <div class="input-box">
+            <label>Place Address</label>
+            <input type="text" name="address" placeholder="Enter the place address" required />
+          </div>
+          <div class="column">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

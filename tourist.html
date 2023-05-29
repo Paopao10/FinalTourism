@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <img src="assets/logo.png">
+        <li><a href="touristreg.html">
+          <span class="navitem">Register Tourist</span>
+        </a></li>
+        <li><a href="placereg.html">
+          <span class="navitem">Register Place</span>
+        </a></li>
+        <li><a href="tourist.html">
+          <span class="navitem">Registered Tourist</span>
+        </a></li>
+        <li><a href="login.html" class="logout">
+          <span class="navitem">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <section class="main">
+        <div class="mainbox1">
+          <ul>
+            <li>Tourist Registration</li>
+            <li>Place Registration</li>
+            <li class="active">Registered Tourist</li>
+          </ul>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Nationality</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Birth Date</th>
+                <th>Visitor Type</th>
+                <th>Actions</th> 
+              </tr>
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+    </section>
+    <!-- MAIN -->
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- NAVBAR -->
+    <nav>
+      <ul>
+        <img src="assets/logo.png">
+        <li><a href="touristreg.html">
+          <span class="navitem">Register Tourist</span>
+        </a></li>
+        <li><a href="placereg.html">
+          <span class="navitem">Register Place</span>
+        </a></li>
+        <li><a href="tourist.html">
+          <span class="navitem">Registered Tourist</span>
+        </a></li>
+        <li><a href="login.html" class="logout">
+          <span class="navitem">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <section class="main">
+      <div class="mainbox1">
+        <ul>
+          <li class="active">Tourist Registration</li>
+          <li>Place Registration</li>
+          <li>Registered Tourist</li>
+        </ul>
+
+        <!-- CONTENT -->
+        <form action="register.php" method="post" class="form">
+
+          <!-- first and last name -->
+          <div class="column">
+            <div class="input-box">
+              <label>First Name</label>
+              <input type="text" name="firstName" placeholder="Enter First Name" required />
+            </div>
+            <div class="input-box">
+              <label>Last Name</label>
+              <input type="text" name="lastName" placeholder="Enter Last Name" required />
+            </div>
+          </div>
+          <!-- first and last name -->
+
+          <!-- gender -->
+          <div class="gender-box">
+            <h3>Gender</h3>
+            <div class="gender-option">
+              <div class="gender">
+                <input type="radio" value="m" id="check-male" name="gender" checked />
+                <label for="check-male">Male</label>
+              </div>
+              <div class="gender">
+                <input type="radio" value="f" id="check-female" name="gender" />
+                <label for="check-female">Female</label>
+              </div>
+            </div>
+          </div>
+          <!-- gender -->
+
+          <!-- nationality -->
+          <div class="column">
+            <div class="input-box">
+              <label>Nationality</label>
+              <input type="text" name="nationality" placeholder="Enter Nationality" required />
+            </div>
+          </div>
+          <!-- nationality -->
+
+          <!-- email address -->
+          <div class="input-box">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Enter Email Address" required />
+          </div>
+          <!-- email address -->
+
+          <!-- phone number and birthdate -->
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input type="tel" name="phonenumber" placeholder="Enter phone number" required />
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+              <input type="date" name="birthdate" placeholder="Enter birth date" required />
+            </div>
+          </div>
+          <!-- phone number and birthdate -->
+
+          <div class="input-box address">
+            <label>Visitor Type:</label>
+            <div class="column">
+              <div class="select-box">
+                <select name="visitortype">
+                  <option hidden>Type</option>
+                  <option value="Tourist">Tourist</option>
+                  <option value="Local">Local</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Register</button>
+
+        </form>
+      </div>
+    </section>
+    <!-- MAIN -->
+  </div>
+</body>
+</html>
